@@ -1,6 +1,6 @@
 # Pacman
 
-Object Oriented Programming inal Project
+Object Oriented Programming Final Project
 
 Chellshe Love Simrochelle - L2AC
 
