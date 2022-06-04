@@ -455,9 +455,9 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
 }
 
 	
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        repaint();
+    @Override // to override the keyReleased() method of the KeyListener interface
+    public void actionPerformed(ActionEvent e) { // to define the actionPerformed() method of the ActionListener interface
+        repaint(); // to repaint the graphics component
     }
 		
 	}
