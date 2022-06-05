@@ -340,9 +340,9 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
                             y + BLOCK_SIZE - 1);
                 }
 
-                if ((screenData[i] & 16) != 0) { // if it is 16 the white dot is drawn
-                    g2d.setColor(new Color(255,255,255)); // the color of the dot is set to white
-                    g2d.fillOval(x + 10, y + 10, 6, 6); // the dot is filled and drawn
+                if ((screenData[i] & 16) != 0) { // if it is 16 the white pellet dot is drawn
+                    g2d.setColor(new Color(255,255,255)); // the color of the pellet dot is set to white
+                    g2d.fillOval(x + 10, y + 10, 6, 6); // the pellet dot is filled and drawn
                }
 
                 i++; 
