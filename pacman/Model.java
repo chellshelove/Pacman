@@ -240,15 +240,15 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
 
             }
 
-            ghost_x[i] = ghost_x[i] + (ghost_dx[i] * ghostSpeed[i]);
-            ghost_y[i] = ghost_y[i] + (ghost_dy[i] * ghostSpeed[i]);
+            ghost_x[i] = ghost_x[i] + (ghost_dx[i] * ghostSpeed[i]); // the ghost will move in the direction that is determined by the ghost_dx and ghost_dy
+            ghost_y[i] = ghost_y[i] + (ghost_dy[i] * ghostSpeed[i]); // the ghost will move in the direction that is determined by the ghost_dx and ghost_dy
             drawGhost(g2d, ghost_x[i] + 1, ghost_y[i] + 1); // with the drawGhost function it loads the image of the ghost that is needed to be drawn
 
             if (pacman_x > (ghost_x[i] - 12) && pacman_x < (ghost_x[i] + 12) // if the pacman touches one of the ghosts then the pacman looses a heart life
-                    && pacman_y > (ghost_y[i] - 12) && pacman_y < (ghost_y[i] + 12)
+                    && pacman_y > (ghost_y[i] - 12) && pacman_y < (ghost_y[i] + 12) 
                     && inGame) {
 
-                dying = true; 
+                dying = true; // the game is over
             }
         }
     }
