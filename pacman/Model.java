@@ -141,13 +141,13 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
 
     private void checkMaze() { // the function checkMaze checks if there are any dot points left for the pacman to eat
 
-        int i = 0;
-        boolean finished = true;
+        int i = 0; 
+        boolean finished = true; // the boolean finished is used to check if the game is finished
 
-        while (i < N_BLOCKS * N_BLOCKS && finished) {
+        while (i < N_BLOCKS * N_BLOCKS && finished) { // the loop is used to check if there are any dot points left for the pacman to eat
 
-            if ((screenData[i]) != 0) {
-                finished = false;
+            if ((screenData[i]) != 0) { // if there is a dot point left for the pacman to eat the game is not finished
+                finished = false; // the game is not finished
             }
 
             i++;
@@ -174,8 +174,8 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
 
     	lives--;
 
-        if (lives == 0) {
-            inGame = false;
+        if (lives == 0) { // if the pacman has no more heart lives then the game is over and the game restarts
+            inGame = false; // the game stops and starts over
         }
 
         continueLevel(); // the pacman and ghosts are put back to their starting positions
