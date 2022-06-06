@@ -361,11 +361,11 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
     private void initLevel() { // initialize the level
 
         int i;
-        for (i = 0; i < N_BLOCKS * N_BLOCKS; i++) { // to initialize the level, create  for loop and copy the whole play field form the array levelData to the new array screenData
+        for (i = 0; i < N_BLOCKS * N_BLOCKS; i++) { // to initialize the level, create  for loop and copy the whole play field from the array levelData to the new array screenData
             screenData[i] = levelData[i];
         }
 
-        continueLevel();
+        continueLevel(); // continue the level
     }
 
     private void continueLevel() { // the function continueLevel() defines the position of the ghosts, it also creates random speed for the ghosts
