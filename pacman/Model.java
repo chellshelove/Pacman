@@ -61,7 +61,7 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
     };
 
     
-    private final int validSpeeds[] = {1, 2, 3, 4, 6, 8}; //an array of the valid speeds for the speed
+    private final int validSpeeds[] = {1, 2, 3, 4, 6, 8}; //an array of the valid speeds for the speed of the game 
     private final int maxSpeed = 6; //the maximum speed
 
     private int currentSpeed = 3; // the current speed of the game
