@@ -1,6 +1,6 @@
 package pacman;
 
-// below is the list of all the imports that are used in this file
+// below is the list of all the packages that are used in this file
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
