@@ -234,8 +234,8 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
                         count = 3;
                     }
 
-                    ghost_dx[i] = dx[count];
-                    ghost_dy[i] = dy[count];
+                    ghost_dx[i] = dx[count]; // the ghost will move in the direction that is determined by the count
+                    ghost_dy[i] = dy[count]; // the ghost will move in the direction that is determined by the count
                 }
 
             }
