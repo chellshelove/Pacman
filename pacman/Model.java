@@ -186,7 +186,7 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
         int pos; // the position of the ghost
         int count; // the count of the ghost
 
-        for (int i = 0; i < N_GHOSTS; i++) { // set the position of all 6 ghosts again using block size and the number of ghosts 
+        for (int i = 0; i < N_GHOSTS; i++) { // set the position of all 5 ghosts again using block size and the number of ghosts 
             if (ghost_x[i] % BLOCK_SIZE == 0 && ghost_y[i] % BLOCK_SIZE == 0) { // the ghost will move on one square then they will decide if they want to change directions 
                 pos = ghost_x[i] / BLOCK_SIZE + N_BLOCKS * (int) (ghost_y[i] / BLOCK_SIZE); // the position of the ghost is the ghost_x divided by the block size plus the number of blocks times the ghost_y divided by the block size
 
@@ -354,7 +354,7 @@ public class Model extends JPanel implements ActionListener { // JPanel is a cla
     	lives = 3; // starting values for the lives
         score = 0; // starting values for the score
         initLevel(); // initialize the level
-        N_GHOSTS = 5; // define the number of the ghosts 
+        N_GHOSTS = 7; // define the number of the ghosts 
         currentSpeed = 2; // define the speed of the ghosts
     }
 
